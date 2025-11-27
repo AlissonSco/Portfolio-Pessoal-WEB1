@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #2d2e32;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 5%;
+    font-size: 20px;
+    background-color: #16161828;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.navegacaoBotoes a {
+    color: #e50e0e;
+    padding: 10px 15px;
+}
+main {
+    height: 100vh;
+}
+
+#principalConteudo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5%;
+  padding: 20px;
+}
+
+.textoIntro h6 {
+    margin-bottom: 20px;
+}
+
+.textoIntro {
+    margin-top: 10px;
+    max-width: 500px;
+}
+
+#decoracao01 {
+  background-color: #e50e0e;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  width: max-content;
+}
+
+#sectionSobreMim {
+  background-color: #25262a;
+  padding: 40px 0;
+}
+
+.textoConjunto01 {
+  max-width: 900px;
+  margin: auto;
+  font-size: 20px;
+  padding: 5%;
+}
+
+#nome {
+  font-size: 70px;
+  margin: 10px 0;
+}
+
+#frase {
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+#sectionHabilidades {
+  padding: 40px 0;
+}
+
+#sectionHabilidades h2 {
+    margin-left: 10%;
+    font-size: 32px;
+}
+
+table {
+  width: 80%;
+  margin: 40px auto;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+table th, table td {
+  padding: 15px;
+  border-bottom: 1px solid #8f1414;
+}
+
+table th {
+  background: #333;
+  color: #e50e0e;
+}
+
+#sectionProjetos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    padding: 40px 0;
+    align-items: center;
+    background-color: #333;
+}
+
+.projeto {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: #1b1b1b;
+    width: 90%;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 0 20px #00000060;
+    color: white;
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.projeto:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 0 30px #00000090;
+}
+
+.projetoImg img {
+    width: 380px;
+    height: auto;
+    border-radius: 14px;
+    object-fit: cover;
+    box-shadow: 0 0 10px #00000070;
+    transition: transform .4s ease, filter .4s ease;
+}
+
+.projeto:hover .projetoImg img {
+    transform: scale(1.05);
+    filter: brightness(1.15);
+}
+
+.projetoInfo {
+    transition: transform .4s ease, opacity .4s ease;
+}
+
+.projeto:hover .projetoInfo {
+    transform: translateX(6px);
+    opacity: 1;
+}
