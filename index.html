@@ -11,24 +11,25 @@
 
     <header>
         <nav class="navegacaoBotoes">
-            <a href="#">Início</a>
-            <a href="#">Sobre mim</a>
-            <a href="#">Projetos</a>
-            <a href="#">Contato</a>
-        </nav>
+        <ul>
+            <li><a href="#principalConteudo">Início</a></li>
+            <li><a href="#sectionSobreMim">Sobre mim</a></li>
+            <li><a href="#sectionProjetos">Projetos</a></li>
+            <li><a href="#sectionContatos">Contato</a></li>
+        </ul>
+    </nav>
     </header>
 
     <main>
         <div id="principalConteudo">
             <div class="textoIntro">
-                <h6 id="decoracao01">Futuro Desenvolvedor Full-Stack</h6>
                 <h3>Prazer, eu sou</h3>
                 <h1 id="nome">Alisson Sousa</h1>
-                <p id="frase">Códigos robustos surgem de mentes tranquilas.</p>
+                <h6 id="decoracao01">Futuro Desenvolvedor Full-Stack</h6>
             </div>
 
             <div>
-                <img src="img/eu.png" alt="" width="400" height="500">
+                <img id="imgPrincipal" src="img/eu.png" alt="" width="300" height="400">
             </div>
         </div>
     </main>
@@ -36,7 +37,7 @@
     <section id="sectionSobreMim">
         <div class="textoConjunto01">
 
-            <h1 style="color: #e50e0e;">Sobre mim</h1>
+            <h1 style="color: #e30224;">Sobre mim</h1>
             <br>
             <hr>
             <br>
@@ -69,7 +70,7 @@
 
     <section id="sectionHabilidades">
         <div>
-            <h2 style="color: #e50e0e;">Tecnologias</h2>
+            <h2 style="color: #e30224;">Tecnologias</h2>
             <table>
                 <tr>
                     <th>Habilidade</th>
@@ -89,50 +90,79 @@
     </section>
 
 
-<section id="sectionProjetos">
+    <section id="sectionProjetos">
 
-    <div class="projeto">
-        <div class="projetoImg">
-            <figure>
-                <img src="img/nerdWare.png" alt="Projeto NerdWare" width="880" height="420">
-            </figure>
+        <div class="projeto">
+            <div class="projetoImg">
+                <figure>
+                    <img src="img/nerdWare.png" alt="Projeto NerdWare" width="880" height="420">
+                </figure>
+            </div>
+
+            <div class="projetoInfo">
+                <h1>NerdWare</h1>
+                <h2>Tempo gasto: 1 semana</h2>
+                <p>
+                    Este projeto consiste na criação de um protótipo de um site empresarial para 
+                    a empresa fictícia Nerdware.
+                </p>
+                <p>
+                    A Nerdware é uma loja especializada em produtos e equipamentos de informática, 
+                    oferecendo peças de computador, periféricos, notebooks e diversos acessórios tecnológicos.
+                </p>
+            </div>
         </div>
 
-        <div class="projetoInfo">
-            <h1>NerdWare</h1>
-            <h2>Tempo gasto: 1 semana</h2>
-            <p>
-                Este projeto consiste na criação de um protótipo de um site empresarial para 
-                a empresa fictícia Nerdware.
-            </p>
-            <p>
-                A Nerdware é uma loja especializada em produtos e equipamentos de informática, 
-                oferecendo peças de computador, periféricos, notebooks e diversos acessórios tecnológicos.
-            </p>
-        </div>
-    </div>
+        <div class="projeto">
+            <div class="projetoImg">
+                <figure>
+                    <img src="img/arduino.png" alt="Projeto Arduino" width="880" height="420">
+                </figure>
+            </div>
 
-    <div class="projeto">
-        <div class="projetoImg">
-            <figure>
-                <img src="img/arduino.png" alt="Projeto Semáforo Arduino" width="880" height="420">
-            </figure>
+            <div class="projetoInfo">
+                <h1>Semáforo</h1>
+                <h2>Tempo gasto: 2 dias</h2>
+                <p>
+                    Desenvolvimento de um sistema de semáforo utilizando Arduino.
+                </p>
+                <p>
+                    Projeto focado em lógica de controle e funcionamento de sistemas embarcados, 
+                    utilizando C++ para programação do microcontrolador.
+                </p>
+            </div>
         </div>
 
-        <div class="projetoInfo">
-            <h1>Semáforo</h1>
-            <h2>Tempo gasto: 2 dias</h2>
-            <p>
-                Desenvolvimento de um sistema de semáforo utilizando Arduino.
-            </p>
-            <p>
-                Projeto focado em lógica de controle e funcionamento de sistemas embarcados, 
-                utilizando C++ para programação do microcontrolador.
-            </p>
-        </div>
-    </div>
+    </section>
 
-</section>
+
+    <section id="sectionContatos">
+        <h2>Contato</h2>
+
+        <div class="contatoContainer">
+
+            <div class="contatoInfo">
+                <h3>Vamos conversar!</h3>
+                <p>Precisa de um site, sistema, ajuda com código ou quer só trocar uma ideia?  
+                Me chama nos contatos abaixo 👇</p>
+
+                <ul>
+                    <li><strong>Email:</strong> alisson.ac97543@gmail.com</li>
+                    <li><strong>WhatsApp:</strong> (85) 9 98431-1381</li>
+                    <li><strong>GitHub:</strong><a href="https://github.com/AlissonSco" target="_blank"> github.com/AlissonSco</a></li>
+                </ul>
+            </div>
+
+            <form class="contatoForm">
+                <input type="text" placeholder="Seu nome">
+                <input type="email" placeholder="Seu email">
+                <textarea placeholder="Sua mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+
+        </div>
+    </section>
+
 
 </body>
 </html>
