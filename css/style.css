@@ -90,6 +90,10 @@ main {
   padding: 40px 0;
 }
 
+#sectionSobreMim h2 {
+    font-size: 20px;
+}
+
 .textoConjunto01 {
   max-width: 900px;
   margin: auto;
@@ -277,3 +281,4 @@ table th {
     background-color: #c80007;
     transform: scale(1.05);
 }
+
